@@ -60,26 +60,6 @@ export default function Home() {
     })
   }
 
-  useEffect(() => {
-    const ifClicked = e => {
-           // If the menu is open and the clicked target is not within the menu,
-      // then close the menu
-      if(menu && ref.current && ref.current.contains(e.target)) {
-        setmenu(false)
-      }
-    }
-    document.addEventListener("mousedown", ifClicked)
-    return () => {
-      // Cleanup the event listener
-      document.removeEventListener("mousedown", ifClicked)
-
-    }
-  }, [menu]) 
-  const scrollHeight = () => {
-      let scrollDistance = document.documentElement.clientHeight;
-      window.scrollBy(0, scrollDistance)
-  }
-
   return (
     <div>
        
@@ -135,7 +115,7 @@ export default function Home() {
                   projects.map(({title, id, address}) => (
                     <motion.a whileHover={{scale: 1.1}} target='_blank' href={address} key={id} className='w-fit mx-auto rounded-lg p-4 text-center border cursor-pointer border-gray-600'>
                       <h1 className='text-white pb-4 text-center font-bold text-lg'>{title}</h1>
-                      <iframe className='outline-none rounded-md' loading='lazy' src={address} frameborder="0"></iframe>
+                      <iframe className='outline-none rounded-md' loading='lazy' src={address} frameBorder="0"></iframe>
                     </motion.a>
                   ))
                 }
@@ -159,7 +139,7 @@ export default function Home() {
         <div className='h-screen w-full bg-gray-700' id='contact'>
           <div className='flex items-center justify-center h-full flex-col text-white'>
           <div className='text-center'>
-          <h3 className='text-3xl font-bold'>LET'S WORK TOGETHER...</h3>
+          <h3 className='text-3xl font-bold'>LET&apos;S WORK TOGETHER...</h3>
           <p className='italic text-lg'>Contact me</p>
           <ul className='pt-5 text-2xl flex flex-col items-center justify-center  w-40 mx-auto'>
             <li > <a className='flex items-center justify-between' target="_blank" rel='noopener' href="https://www.instagram.com/sonio_deji"><BsInstagram />     Instagram</a></li>
