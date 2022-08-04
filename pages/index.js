@@ -60,7 +60,7 @@ export default function Home() {
     })
   }
 
-  useEffect(() => {
+  useEffect(({ setmenu }) => {
     const ifClicked = e => {
            // If the menu is open and the clicked target is not within the menu,
       // then close the menu
@@ -166,7 +166,7 @@ export default function Home() {
             <li > <a className='flex items-center justify-between' target="_blank" rel='noreferrer' href="https://www.instagram.com/sonio_deji">   Instagram</a></li>
               <li className='pt-5'><a className='flex items-center justify-between' rel='noreferrer' target="_blank" href="https://twitter.com/sonio_deji">Twitter</a></li>
               <li className='pt-5' ><a target="_blank" rel='noreferrer' href="mailto:atandauthman2@gmail.com">@send a mail</a></li>
-              <li className='pt-5'><a className='flex items-center justify-between' target="_blank" rel='noreferrer' href="tel:+243-811-773-0982"><span class="material-icons">phone</span>Call ME</a></li>
+              <li className='pt-5'><a className='flex items-center justify-between' target="_blank" rel='noreferrer' href="tel:+243-811-773-0982"><span className="material-icons">phone</span>Call ME</a></li>
           </ul>
         </div>
           </div>
