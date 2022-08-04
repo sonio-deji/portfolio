@@ -142,10 +142,10 @@ export default function Home() {
           <h3 className='text-3xl font-bold'>LET&apos;S WORK TOGETHER...</h3>
           <p className='italic text-lg'>Contact me</p>
           <ul className='pt-5 text-2xl flex flex-col items-center justify-center  w-40 mx-auto'>
-            <li > <a className='flex items-center justify-between' target="_blank" rel='noopener' href="https://www.instagram.com/sonio_deji"><BsInstagram />     Instagram</a></li>
-              <li className='pt-5'><a className='flex items-center justify-between' rel='noopener' target="_blank" href="https://twitter.com/sonio_deji"><BsTwitter />Twitter</a></li>
-              <li className='pt-5' ><a target="_blank" rel='noopener' href="mailto:atandauthman2@gmail.com">@send a mail</a></li>
-              <li className='pt-5'><a className='flex items-center justify-between' target="_blank" rel='noopener' href="tel:+243-811-773-0982"><BsFillTelephoneFill />Call ME</a></li>
+            <li > <a className='flex items-center justify-between' target="_blank" rel='noreferrer' href="https://www.instagram.com/sonio_deji"><BsInstagram />     Instagram</a></li>
+              <li className='pt-5'><a className='flex items-center justify-between' rel='noreferrer' target="_blank" href="https://twitter.com/sonio_deji"><BsTwitter />Twitter</a></li>
+              <li className='pt-5' ><a target="_blank" rel='noreferrer' href="mailto:atandauthman2@gmail.com">@send a mail</a></li>
+              <li className='pt-5'><a className='flex items-center justify-between' target="_blank" rel='noreferrer' href="tel:+243-811-773-0982"><BsFillTelephoneFill />Call ME</a></li>
           </ul>
         </div>
           </div>
