@@ -152,6 +152,8 @@ export default function Home() {
                 <motion.li whileHover={{scale:1.1}} className='pt-5'>Javascript</motion.li>
                 <motion.li whileHover={{scale:1.1}} className='pt-5'>ReactJS</motion.li>
                 <motion.li whileHover={{scale:1.1}} className='pt-5'>NextJS</motion.li>
+                <motion.li whileHover={{scale:1.1}} className='pt-5'>TailwindCSS</motion.li>
+                <motion.li whileHover={{scale:1.1}} className='pt-5'>Git</motion.li>
               </motion.ul>
             </div>
         </div>
