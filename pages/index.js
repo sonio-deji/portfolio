@@ -54,13 +54,12 @@ export default function Home() {
     });
   }, [])
   const goToTop = () => {
-    let scrollDistance = document.documentElement.clientHeight;
     window.scrollTo({
       top: 0,
     })
   }
 
-  useEffect(({ setmenu }) => {
+  useEffect(() => {
     const ifClicked = e => {
            // If the menu is open and the clicked target is not within the menu,
       // then close the menu
