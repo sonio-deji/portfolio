@@ -16,6 +16,8 @@ const projects = [
   {title: 'JS calculator', address:'https://calculatorfor-u.netlify.app/', id: 2},
   {title: 'Reservation App', address:'https://sonio-booking-app.netlify.app/', id: 3},
   {title: 'Todo App', address:'https://sonio-todoapp.netlify.app/', id: 4},
+  {title: 'Fiber', address:'https://fiber-clone-sonio.netlify.app/', id: 5, otherProp: 'col-span-2 grid-col-start'},
+
 ]
 const itemVariants = {
   closed: {
@@ -85,7 +87,7 @@ export default function Home() {
       </Head>
       <div ref={ref}>
       <div  className='h-screen bg-gradient-to-r from-blue-900 to-gray-900 scroll-smooth' id='introduction'>
-            <div className='fixed top-0 right-0 float-right' id='click'>
+            <div className='fixed top-0 right-0 float-right pt-3' id='click'>
             <motion.svg  
             whileHover={{ scale: 1.1 }}
             variants={itemVariants} 
@@ -125,12 +127,12 @@ export default function Home() {
             </span>
           </div>}
         </div>
-        <div className='h-screen bg-gradient-to-tr from-blue-900 to-gray-800' id='works'>
+        <div className='h-fit bg-gradient-to-tr from-blue-900 to-gray-800' id='works'>
           <div className='w-full p-4 md:flex items-center justify-center h-full'>
             <div className='flex flex-col max-w-screen-lg mx-auto gap-4 lg:grid grid-cols-2'>
                 {
-                  projects.map(({title, id, address}) => (
-                    <motion.a whileHover={{scale: 1.1}} target='_blank' rel='noreferrer noopener' href={address} key={id} className='w-fit mx-auto rounded-lg p-4 text-center border cursor-pointer border-gray-600'>
+                  projects.map(({title, id, address, otherProp}) => (
+                    <motion.a whileHover={{scale: 1.1}} target='_blank' rel='noreferrer noopener' href={address} key={id} className={`w-fit mx-auto rounded-lg p-4 text-center border cursor-pointer border-gray-600 ${otherProp}`}>
                       <h1 className='text-white pb-4 text-center font-bold text-lg'>{title}</h1>
                       <iframe className='outline-none rounded-md' loading='lazy' src={address} frameBorder="0"></iframe>
                     </motion.a>
@@ -144,13 +146,13 @@ export default function Home() {
         </div>
         <div className='h-screen w-full bg-gradient-to-r from-violet-700 to-purple-900' id='skills'>
             <div className='flex items-center justify-center h-full flex-col text-white'>
-              <ul className='text-3xl text-center'>
-                <li >HTML</li>
-                <li className='pt-5'>CSS</li>
-                <li className='pt-5'>Javascript</li>
-                <li className='pt-5'>ReactJS</li>
-                <li className='pt-5'>NextJS</li>
-              </ul>
+              <motion.ul className='text-3xl text-center'>
+                <motion.li whileHover={{scale: 1.1}} >HTML</motion.li>
+                <motion.li whileHover={{scale:1.1}} className='pt-5'>CSS</motion.li>
+                <motion.li whileHover={{scale:1.1}} className='pt-5'>Javascript</motion.li>
+                <motion.li whileHover={{scale:1.1}} className='pt-5'>ReactJS</motion.li>
+                <motion.li whileHover={{scale:1.1}} className='pt-5'>NextJS</motion.li>
+              </motion.ul>
             </div>
         </div>
         <div className='h-screen w-full bg-gray-700' id='contact'>
@@ -158,12 +160,12 @@ export default function Home() {
           <div className='text-center'>
           <h3 className='text-3xl font-bold'>LET&apos;S WORK TOGETHER...</h3>
           <p className='italic text-lg'>Contact me</p>
-          <ul className='pt-5 text-2xl flex flex-col items-center justify-center  w-40 mx-auto'>
-            <li > <a className='flex items-center justify-between' target="_blank" rel='noreferrer noopener' href="https://www.instagram.com/sonio_deji">   Instagram</a></li>
-              <li className='pt-5'><a className='flex items-center justify-between' rel='noreferrer noopener' target="_blank" href="https://twitter.com/sonio_deji">Twitter</a></li>
-              <li className='pt-5' ><a target="_blank" rel='noreferrer noopener' href="mailto:atandauthman2@gmail.com">@send a mail</a></li>
-              <li className='pt-5'><a className='flex items-center justify-between' target="_blank" rel='noreferrer noopener' href="tel:+243-811-773-0982"><span className="material-icons">phone</span>Call ME</a></li>
-          </ul>
+          <motion.ul className='pt-5 text-2xl flex flex-col items-center justify-center  w-40 mx-auto'>
+            <motion.li whileHover={{scale: 1.1}}> <a className='flex items-center justify-between' target="_blank" rel='noreferrer noopener' href="https://www.instagram.com/sonio_deji">   Instagram</a></motion.li>
+              <motion.li whileHover={{scale: 1.1}} className='pt-5'><a className='flex items-center justify-between' rel='noreferrer noopener' target="_blank" href="https://twitter.com/sonio_deji">Twitter</a></motion.li>
+              <motion.li whileHover={{scale: 1.1}} className='pt-5' ><a target="_blank" rel='noreferrer noopener' href="mailto:atandauthman2@gmail.com">@send a mail</a></motion.li>
+              <motion.li whileHover={{scale: 1.1}} className='pt-5'><a className='flex items-center justify-between' target="_blank" rel='noreferrer noopener' href="tel:+243-811-773-0982"><span className="material-icons">phone</span>Call ME</a></motion.li>
+          </motion.ul>
         </div>
           </div>
 
