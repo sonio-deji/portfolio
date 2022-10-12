@@ -23,7 +23,16 @@ const projects = [
   },
   { title: "Todo App", address: "https://sonio-todoapp.netlify.app/", id: 4 },
   { title: "Fiber", address: "https://fiber-clone-sonio.netlify.app/", id: 5 },
-  { title: "Fiber", address: "https://countriesapp-api.netlify.app/", id: 5 },
+  {
+    title: "countries",
+    address: "https://countriesapp-api.netlify.app/",
+    id: 6,
+  },
+  {
+    title: "E-Commerce",
+    address: "https://sonio-jsstore.netlify.app/",
+    id: 6,
+  },
 ];
 const itemVariants = {
   closed: {
