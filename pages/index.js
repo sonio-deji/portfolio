@@ -6,7 +6,7 @@ import ArrowUpward from "@mui/icons-material/ArrowUpward";
 import Close from "@mui/icons-material/Close";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import Link from "@mui/icons-material/Link";
-import GitHub from "@mui/icons-material/Github";
+import GitHub from "@mui/icons-material/GitHub";
 import Twitter from "@mui/icons-material/Twitter";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
@@ -348,7 +348,7 @@ export default function Home() {
                     rel="noreferrer noopener"
                   >
                     {" "}
-                    <Github />{" "}
+                    <GitHub />{" "}
                   </a>
                   <a
                     className={` text-gray-600 ${styles.top}`}
