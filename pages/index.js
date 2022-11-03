@@ -264,7 +264,7 @@ export default function Home() {
                   href="https://docs.google.com/document/d/1QT7GNtYgRGKla1e_YDwJmDjk17PCbB_X/edit?usp=drivesdk&ouid=116994626900130378795&rtpof=true&sd=true"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className={`font-bold text-xl bg-blue-500 text-white rounded-md p-4 w-fit ${styles.contact}`}
+                  className={`font-bold text-md sm:text-xl bg-blue-500 text-white rounded-md p-1 sm:p-4 w-fit ${styles.contact}`}
                 >
                   Download CV
                 </a>
