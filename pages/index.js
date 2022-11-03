@@ -162,7 +162,7 @@ export default function Home() {
         <title>Atanda Uthman</title>
         <meta name="description" content="Portfolio app for Atanda Uthman" />
       </Head>
-      <div ref={ref} className="max-w-5xl mx-auto p-8 bg-[#fbfbfe]">
+      <div ref={ref} className="max-w-5xl mx-auto p-4 sm:p-8 bg-[#fbfbfe]">
         <div className="flex justify-between items-center sticky top-0 z-10 h-14">
           <div className="text-extrabold text-xl font-bold text-black">
             Sonio
@@ -199,7 +199,7 @@ export default function Home() {
         </div>
         <div className="h-screen scroll-smooth" id="introduction">
           <div
-            className={`text-black mt-36 flex border items-center justify-between p-4 ${styles.top}`}
+            className={`text-black mt-36 flex border items-center justify-between p-2 sm:p-4 ${styles.top}`}
           >
             <div className="flex justify-between flex-col h-48">
               <a
@@ -228,7 +228,7 @@ export default function Home() {
               </a>
             </div>
             <div className="flex flex-col h-56 justify-between">
-              <div className="text-4xl font-extrabold text-gray-600">
+              <div className="text-2xl sm:text-4xl font-extrabold text-gray-600">
                 HI, I&apos;m Adedeji
               </div>
               <div className="text-light font-bold text-gray-500">
@@ -256,7 +256,7 @@ export default function Home() {
               <div className="flex justify-between items-center">
                 <a
                   href="#contact"
-                  className={`font-bold text-xl bg-blue-500 text-white rounded-md p-4 w-fit ${styles.contact}`}
+                  className={`font-bold text-md sm:text-xl bg-blue-500 text-white rounded-md p-1 sm:p-4 w-fit ${styles.contact}`}
                 >
                   Contact me <NavigateNext className={styles.nav} />
                 </a>
@@ -281,13 +281,13 @@ export default function Home() {
             </div>
           )}
         </div>
-        <div className="h-screen" id="about">
-          <div className="font-extrabold text-3xl text-gray-500 mb-36">
+        <div className="h-fit mb-16" id="about">
+          <div className="font-extrabold text-2xl sm:text-3xl text-gray-500 mb-10 sm:mb-36">
             ABOUT ME
           </div>
           <div className={`flex justify-between ${styles.about}`}>
             <div>
-              <p className="font-bold text-lg text-gray-500 ">
+              <p className="font-bold text-md sm:text-lg text-gray-500 ">
                 I am a passionate Frontend web/app designer proficient in the
                 use of HTML, CSS, JavaScript and nodeJS including frontend
                 frameworks and libraries and an aspiring full-stack developer
