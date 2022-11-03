@@ -6,7 +6,7 @@ import ArrowUpward from "@mui/icons-material/ArrowUpward";
 import Close from "@mui/icons-material/Close";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import Link from "@mui/icons-material/Link";
-import Github from "@mui/icons-material/Github";
+import GitHub from "@mui/icons-material/Github";
 import Twitter from "@mui/icons-material/Twitter";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
@@ -216,7 +216,7 @@ export default function Home() {
                 rel="noreferrer noopener"
                 className="text-blue-500"
               >
-                <Github />
+                <GitHub />
               </a>
               <a
                 target="_blank"
