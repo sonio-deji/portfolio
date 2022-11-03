@@ -1,0 +1,18 @@
+.about {
+    border-radius: 1rem;
+    box-shadow: inset 5px 5px 10px #b5b5b5, inset -5px -5px 10px #fff;
+    padding: 10px;
+}
+.top {
+    border-radius: .5rem;
+        box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #fff;
+        padding: 10px;
+}
+
+.contact:hover .nav {
+    transform: translateX(8px);
+    transition: all 0.5s ease-in-out;
+}
+.sidebar {
+    box-shadow: inset 5px 5px 10px #b5b5b5, inset -5px -5px 10px #fff;
+}
