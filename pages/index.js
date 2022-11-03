@@ -154,7 +154,7 @@ export default function Home() {
       // Cleanup the event listener
       document.removeEventListener("mousedown", ifClicked);
     };
-  }, [menu]);
+  }, [menu, setmenu]);
 
   return (
     <div>
@@ -229,7 +229,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col h-56 justify-between">
               <div className="text-4xl font-extrabold text-gray-600">
-                HI, I'm Adedeji
+                HI, I&apos;m Adedeji
               </div>
               <div className="text-light font-bold text-gray-500">
                 <Typewriter
@@ -291,16 +291,17 @@ export default function Home() {
                 I am a passionate Frontend web/app designer proficient in the
                 use of HTML, CSS, JavaScript and nodeJS including frontend
                 frameworks and libraries and an aspiring full-stack developer
-                with the aim of bringing ideas to life digitally. I'm always
-                curious and I really love to find out the "Why" of things and
-                concepts. I'm very well able to build functional web
-                applications and easily convert UI designs into pixel perfect
-                responsive web pages. I am a fast learner, a diligent worker and
-                can adapt to a new technology as quickly as the need may be. My
-                aim is to one day be able to stand among the great creators who
-                have made an impact in the big and little they have done,
-                starting from anything as little as a landing page to big things
-                like a fully functional responsive web application.
+                with the aim of bringing ideas to life digitally. I&apos;m
+                always curious and I really love to find out the
+                &lsquo;Why&rsquo; of things and concepts. I&apos;m very well
+                able to build functional web applications and easily convert UI
+                designs into pixel perfect responsive web pages. I am a fast
+                learner, a diligent worker and can adapt to a new technology as
+                quickly as the need may be. My aim is to one day be able to
+                stand among the great creators who have made an impact in the
+                big and little they have done, starting from anything as little
+                as a landing page to big things like a fully functional
+                responsive web application.
               </p>
               <div className="flex justify-between w-48 mt-9">
                 <div>
@@ -334,6 +335,7 @@ export default function Home() {
                   height="100%"
                   objectFit="contain"
                   layout="responsive"
+                  alt={id}
                 />
                 <h1 className="text-gray-600 font-bold text-lg">{title}</h1>
                 <p className="text-gray mb-5">{desc}</p>
@@ -370,6 +372,7 @@ export default function Home() {
                   width="100%"
                   height="100%"
                   className="rounded-[50%]"
+                  alt="logo"
                 />
               </motion.li>
               <motion.li whileHover={{ scale: 1.1 }} className="">
@@ -378,6 +381,7 @@ export default function Home() {
                   width="100%"
                   height="100%"
                   className="rounded-[50%]"
+                  alt="logo"
                 />
               </motion.li>
               <motion.li whileHover={{ scale: 1.1 }} className=" rounded-lg">
@@ -386,6 +390,7 @@ export default function Home() {
                   width="100%"
                   height="100%"
                   className="rounded-[50%]"
+                  alt="logo"
                 />
               </motion.li>
               <motion.li whileHover={{ scale: 1.1 }} className="">
@@ -394,6 +399,7 @@ export default function Home() {
                   width="100%"
                   height="100%"
                   className="rounded-[50%]"
+                  alt="logo"
                 />
               </motion.li>
               <motion.li whileHover={{ scale: 1.1 }} className="">
@@ -402,6 +408,7 @@ export default function Home() {
                   width="100%"
                   height="100%"
                   className="rounded-[50%]"
+                  alt="logo"
                 />
               </motion.li>
               <motion.li whileHover={{ scale: 1.1 }} className="">
@@ -410,6 +417,7 @@ export default function Home() {
                   width="100%"
                   height="100%"
                   className="rounded-[50%]"
+                  alt="logo"
                 />
               </motion.li>
               <motion.li whileHover={{ scale: 1.1 }} className="">
@@ -418,6 +426,7 @@ export default function Home() {
                   width="50%"
                   height="50%"
                   className="rounded-[50%]"
+                  alt="logo"
                 />
               </motion.li>
               <motion.li whileHover={{ scale: 1.1 }} className="">
@@ -426,6 +435,7 @@ export default function Home() {
                   width="100%"
                   height="100%"
                   className={`rounded-[50%]`}
+                  alt="logo"
                 />
               </motion.li>
             </motion.ul>
