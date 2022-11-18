@@ -270,11 +270,10 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div></div>
           </div>
           {showbutton && (
             <div
-              className="fixed right-3 cursor-pointer bottom-6 text-white p-5 bg-gradient-to-r from-cyan-500 to-blue-900 rounded-lg"
+              className="fixed right-3 cursor-pointer bottom-6 text-white p-5 bg-blue-500 z-30 rounded-lg"
               onClick={goToTop}
             >
               <ArrowUpward />

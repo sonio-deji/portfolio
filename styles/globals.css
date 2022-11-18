@@ -5,3 +5,15 @@
 html {
     scroll-behavior: smooth;
 }
+::selection {
+    color: none;
+    background: none;
+}
+html::selection {
+    color: none;
+    background: none;
+}
+html::-moz-selection {
+    color: none;
+    background: none;
+}
