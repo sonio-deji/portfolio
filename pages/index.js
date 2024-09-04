@@ -367,7 +367,7 @@ export default function Home() {
             background: "linear-gradient(90deg, #4831d4 67%, #ccf381 33%)",
           }}
         >
-          <div className=" max-w-[1440px] mx-auto py-36 px-5  flex items-center justify-center">
+          <div className=" max-w-[1440px] mx-auto py-36 overflow-hidden px-5  flex items-center justify-center">
             <div className=" max-w-full lg:max-w-[50%]">
               <div className=" font-bold text-4xl md:text-6xl text-[#ccf381]">
                 FRONTEND <br />
@@ -388,7 +388,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className=" hidden lg:block lg:max-w-[50%] ">
+            <div className=" hidden lg:block lg:max-w-[30%] ">
               <figure className="ggnSEW visage">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
