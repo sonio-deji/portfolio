@@ -547,9 +547,9 @@ export default function Home() {
               <br />
               <div className=" flex flex-col gap-10 max-w-[701px]">
                 <p className=" text-white text-xl ">
-                  I've built products for companies and businesses around the
-                  globe ranging from marketing websites to complex solutions and
-                  enterprise apps with focus on fast, elegant and accessible
+                  I&apos;ve built products for companies and businesses around
+                  the globe ranging from marketing websites to complex solutions
+                  and enterprise apps with focus on fast, elegant and accessible
                   user experiences.
                 </p>
                 <p className=" text-white text-xl ">
